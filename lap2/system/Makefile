@@ -1,7 +1,7 @@
 main : main.o lib/add.o lib/sub.o lib/div.o lib/mul.o
-	gcc -o main main.o lib/add.o lib/sub.o lib/mul.o lib/div.o
+	gcc -g -o main main.o lib/add.o lib/sub.o lib/mul.o lib/div.o
 main.o : main.c
-	gcc -c main.c
+	gcc -g -c main.c
 add.o : add.c
 	gcc -c add.c
 sub.o : sub.c
